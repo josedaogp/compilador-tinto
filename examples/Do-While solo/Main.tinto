@@ -1,0 +1,22 @@
+
+import Console;
+
+/**
+ * Aplicación que muestra por pantalla los números 201 a 210
+ */
+library Main {
+
+  /**
+   * Punto de entrada de la aplicación
+   */
+  public void Main() {
+    int i = 0;
+	int j = 200;
+	do{
+		j = j + 1;
+		i = i + 1;
+		Console.print(j);
+		Console.print(' ');
+	}while(i < 10);
+  }
+}

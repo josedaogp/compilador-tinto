@@ -1,0 +1,50 @@
+; %%%%%%%%%%%%%%%
+; Main_Main
+; %%%%%%%%%%%%%%%
+Main_Main:
+	assign tmp_0, 0x1                                ; tmp_0 <- 1
+	assign local_0, tmp_0                            ; a <- tmp_0
+	assign tmp_1, 0x0                                ; tmp_1 <- 0
+	assign local_1, tmp_1                            ; j <- tmp_1
+	assign tmp_2, 0x3                                ; tmp_2 <- 3
+	jmpeq Main_Main_3, local_0, tmp_2                ; if(a == tmp_2) jump Main_Main_3
+	assign tmp_3, 0x2                                ; tmp_3 <- 2
+	jmpeq Main_Main_4, local_0, tmp_3                ; if(a == tmp_3) jump Main_Main_4
+	assign tmp_4, 0x1                                ; tmp_4 <- 1
+	jmpeq Main_Main_5, local_0, tmp_4                ; if(a == tmp_4) jump Main_Main_5
+	assign tmp_5, 0x4                                ; tmp_5 <- 4
+	jmpeq Main_Main_6, local_0, tmp_5                ; if(a == tmp_5) jump Main_Main_6
+	jump Main_Main_7                                 ; jump Main_Main_7
+Main_Main_3:
+	assign tmp_6, 0x1                                ; tmp_6 <- 1
+	assign local_1, tmp_6                            ; j <- tmp_6
+	precall 0x4
+	param local_1, 0x0                               ; param[0] <- j
+	call tmp_7, Console_print_0                      ; tmp_7 <- Console_print_0()
+	jump Main_Main_1                                 ; jump Main_Main_1
+Main_Main_4:
+	assign tmp_8, 0x2                                ; tmp_8 <- 2
+	assign local_1, tmp_8                            ; j <- tmp_8
+	precall 0x4
+	param local_1, 0x0                               ; param[0] <- j
+	call tmp_9, Console_print_0                      ; tmp_9 <- Console_print_0()
+	jump Main_Main_1                                 ; jump Main_Main_1
+Main_Main_5:
+	assign tmp_10, 0x3                               ; tmp_10 <- 3
+	assign local_1, tmp_10                           ; j <- tmp_10
+	precall 0x4
+	param local_1, 0x0                               ; param[0] <- j
+	call tmp_11, Console_print_0                     ; tmp_11 <- Console_print_0()
+	jump Main_Main_1                                 ; jump Main_Main_1
+Main_Main_6:
+	assign tmp_12, 0x3                               ; tmp_12 <- 3
+	assign local_1, tmp_12                           ; j <- tmp_12
+	precall 0x4
+	param local_1, 0x0                               ; param[0] <- j
+	call tmp_13, Console_print_0                     ; tmp_13 <- Console_print_0()
+	jump Main_Main_1                                 ; jump Main_Main_1
+Main_Main_7:
+Main_Main_2:
+Main_Main_1:
+;
+;

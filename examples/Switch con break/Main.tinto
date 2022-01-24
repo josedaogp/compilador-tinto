@@ -1,0 +1,33 @@
+
+import Console;
+
+/**
+ * Aplicación que muestra el funcionamiento del switch
+ */
+library Main {
+
+  /**
+   * Punto de entrada de la aplicación
+   */
+  public void Main() {
+    int a = 1;
+	int j = 0;
+	switch(a){
+		case 3: j=1;
+		Console.print(j);
+		break;
+		
+		case 2:  j=2;
+		Console.print(j);
+		break;
+		
+		case 1:  j=3;
+		Console.print(j);
+		break;
+
+		case 4:  j=3;
+		Console.print(j);
+		break;
+	}
+  }
+}

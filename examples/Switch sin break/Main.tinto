@@ -1,0 +1,29 @@
+
+import Console;
+
+library Main {
+
+  /**
+   * Punto de entrada de la aplicación
+   */
+  public void Main() {
+    int a = 1;
+	int j = 0;
+	switch(a){
+		case 3: j=1;
+		Console.print(j);
+		
+		case 2:  j=2;
+		Console.print(j);
+		
+		case 1:  j=3;
+		Console.print(j);
+
+		case 4:  j=4;
+		Console.print(j);
+	}
+  }
+}
+
+
+

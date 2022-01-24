@@ -1,0 +1,28 @@
+
+import Console;
+
+/**
+ * Aplicación que muestra el mensaje 'Hola mundo' en consola
+ */
+library Main {
+
+  /**
+   * Punto de entrada de la aplicación
+   */
+  public void Main() {
+    int i = 0;
+	int j = 1000;
+	while(i < 10){
+		j = j + 1;
+		
+		if(i==5){
+			break;
+		}
+
+		Console.print(j);
+		Console.print(' ');
+
+		i = i + 1;
+	}
+  }
+}
